@@ -46,7 +46,7 @@ export const PhoneIcon = ( { children } ) => {
 export const PDFIcon = ( { children } ) => {
     return (
         <Link
-            to='https://res.cloudinary.com/ferjen/image/upload/v1682901348/medicos-jensen/CV-Erika-Jensen-2023_dp4s4m.pdf'
+            to='https://res.cloudinary.com/ferjen/image/upload/v1682984048/medicos-jensen/CV-Erika-Jensen-2023_lt8846.pdf'
             target='_blank'
             rel='noopener noreferrer'
             title='Chequea mi CV'
@@ -54,7 +54,7 @@ export const PDFIcon = ( { children } ) => {
             <button className='cv-icon'>
                 <img
                     className='icon'
-                    src="https://res.cloudinary.com/ferjen/image/upload/v1682900807/medicos-jensen/ej-pdf_wu2bil.svg"
+                    src="https://res.cloudinary.com/ferjen/image/upload/v1682983653/medicos-jensen/ej-cv_z32dvf.svg"
                     alt="Descargar CV en formato PDF."
                 />
                 {children}
