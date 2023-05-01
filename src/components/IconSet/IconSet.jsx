@@ -1,0 +1,64 @@
+
+
+import { Link } from 'react-router-dom'
+
+
+export const LinkedinIcon = ( { children } ) => {
+    return (
+        <Link
+            to='https://www.linkedin.com/in/erika-daniela-jensen'
+            target='_blank'
+            rel='noopener noreferrer'
+            title='Encontrame en Linkedin'
+        >
+            <button className='linkedin-icon'>
+                <img
+                    className='icon'
+                    src="https://res.cloudinary.com/ferjen/image/upload/v1682900808/medicos-jensen/ej-linkedin_pdy0pu.svg"
+                    alt="Icono de contacto a través de Linkedin."
+                />
+                {children}
+            </button>
+        </Link>
+    )
+}
+
+export const PhoneIcon = ( { children } ) => {
+    return (
+        <Link
+            to='https://wa.me/005492615985002'
+            target='_blank'
+            rel='noopener noreferrer'
+            title='Encontrame en Whatsapp'
+        >
+            <button className='pone-icon'>
+                <img
+                    className='icon'
+                    src="https://res.cloudinary.com/ferjen/image/upload/v1682900807/medicos-jensen/ej-phone_xx7fwn.svg"
+                    alt="Icono de contacto a través de teléfono."
+                />
+                {children}
+            </button>
+        </Link>
+    )
+}
+
+export const PDFIcon = ( { children } ) => {
+    return (
+        <Link
+            to='https://res.cloudinary.com/ferjen/image/upload/v1682901348/medicos-jensen/CV-Erika-Jensen-2023_dp4s4m.pdf'
+            target='_blank'
+            rel='noopener noreferrer'
+            title='Chequea mi CV'
+        >
+            <button className='cv-icon'>
+                <img
+                    className='icon'
+                    src="https://res.cloudinary.com/ferjen/image/upload/v1682900807/medicos-jensen/ej-pdf_wu2bil.svg"
+                    alt="Descargar CV en formato PDF."
+                />
+                {children}
+            </button>
+        </Link>
+    )
+}

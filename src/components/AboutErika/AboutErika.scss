@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+button {
+    all: unset;
+}
+
+.hero__background {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: 10;
+}
+
+.hero__header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+    font-family: $ff-headings;
+    color: $clr-black;
+    padding: 2rem 2.5rem;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.hero__social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.phone-icon {
+    height: 36px;
+    width: 36px;
+    background-color: $clr-black;
+}
+
+.icon {
+    height: 36px;
+    width: 36px;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip::after {
+    content: attr(title);
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.tooltip:hover::after {
+    display: block;
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+/* Media query for screens between 768px and 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Media query for screens larger than 1024px */
+@media screen and (min-width: 1024px) {
+    .hero__header {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    .icon {
+        margin-top: 4rem;
+    }
+}
