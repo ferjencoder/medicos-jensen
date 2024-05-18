@@ -22,3 +22,5 @@
 **ci** Configurar la canalización de implementación automatizada
 
 **perf** Optimizar la consulta de la base de datos para una recuperación más rápida
+
+https://medicos-jensen.netlify.app/
