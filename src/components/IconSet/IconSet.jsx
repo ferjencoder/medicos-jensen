@@ -26,7 +26,7 @@ export const LinkedinIcon = ( { children } ) => {
 export const PhoneIcon = ( { children } ) => {
     return (
         <Link
-            to='https://wa.me/005492615985002'
+            to='https://wa.me/005492995778891'
             target='_blank'
             rel='noopener noreferrer'
             title='Encontrame en Whatsapp'
